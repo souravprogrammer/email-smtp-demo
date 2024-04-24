@@ -1,7 +1,7 @@
 
 import { EmailValidator } from "email-smtp-validator";
 import { NextRequest, NextResponse } from "next/server";
-const config = { validateRegex: true, validateMx: true, validateDisposable: true, validateSMTP: true, timeout: 11000 };
+const config = { validateRegex: true, validateMx: true, validateDisposable: true, validateSMTP: true, timeout: 9000 };
 export async function POST(req: NextRequest) {
     console.log()
     const body = await req.formData();
